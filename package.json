@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/Khush2711/Tailwind#readme",
   "dependencies": {
+    "feather-icons": "^4.29.1",
+    "feathers": "^2.2.4",
     "vite": "^5.2.8"
   },
   "devDependencies": {

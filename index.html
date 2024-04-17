@@ -6,6 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <style>
+        .thunder{
+            display: none;
+            transition: all 5s;
+        }
+
+        .card:hover .thunder{
+            display: block;
+        }
+
+        .card:hover .shadow{
+            box-shadow: 2px 2px 15px black;
+            filter: drop-shadow(5px 5px 60px rgba(255, 234, 234, 0.5));
+        }
+
+    </style>
 </head>
 
 <body>
@@ -13,7 +30,7 @@
     <nav class="bg-deepBlue">
 
         <div class="w-[1080px] mx-auto flex py-7 space-x-11">
-            
+
             <div class="mt-[-4px]">
                 <a href="#"><img src="./images/logo.svg" width="125px" height="30px" /></a>
             </div>
@@ -27,7 +44,7 @@
 
                 <li class="cursor-pointer group hover:text-lightBlue relative  transition-all duration-200">
                     <a href="#">Banking</a>
-                    <div class="absolute bottom-[-1.5em] w-full bg-lightBlue hidden h-1 group-hover:block ">
+                    <div class="absolute bottom-[-1.5em] w-full bg-lightBlue hidden h-1 group-hover:block text-white">
                     </div>
                 </li>
 
@@ -57,21 +74,424 @@
                     <div class="absolute bottom-[-1.5em] w-full bg-lightBlue hidden h-1 group-hover:block ">
                     </div>
                 </li>
-               
+
             </ul>
 
             <div class="text-white flex gap-[1em] mt-[-0.8em]  cursor-pointer">
+
                 <img src="./images/india-flag.svg" class="ml-[-1em] h-7 mt-[0.8em]" />
 
-                <div class="border-2 py-3 px-5 rounded ml-[0.1em] font-bold text-white border-blue-700">Log in</div>
+                <button
+                    class="font-mullish border-2 py-3 px-5 rounded ml-[0.1em] font-bold text-white border-blue-700">Log
+                    in</button>
 
-                <div class="text-blue-500 font-bold  bg-white py-3 px-5">Sign Up</div>
-                
+                <button class="font-mullish text-blue-500 font-bold  bg-white py-3 px-5">Sign Up</button>
+
             </div>
 
         </div>
 
     </nav>
+
+    <section>
+
+        <div class="w-full bg-deepBlue relative">
+
+
+            <div class="w-[1080px] mx-auto flex justify-center items-center font-mullish">
+
+
+                <div class="text-white w-[35%] flex flex-col gap-[2em] mx-[0.5em]">
+
+                    <h2 class="text-[40px] flex-wrap font-mullish font-bold mt-[-1em] leading-[1.1em]">Power your
+                        finance, grow your business</h2>
+
+                    <div class="h-1 w-6 bg-green-500"></div>
+
+                    <p class="opacity-70 text-justify text-[1.1em] ">Accept payments from customers. Automate payouts to
+                        vendors & employees. Never run out of working capital.</p>
+
+                    <div class="">
+                        <button class="px-[1em] py-[1em] bg-lightBlue rounded hover:bg-lightBlue500 font-bold">Sign Up
+                            Now</button>
+                    </div>
+
+                </div>
+
+                <div class="w-[65%]">
+                    <img src="./images/hero-illustration.jpg" alt="">
+                </div>
+
+            </div>
+
+            <!-- <div class="w-[100.1%] absolute left-0 right-0">
+                <img src="./images/hero-shape.svg" class="w-full object-fill scale-x-100"/>
+            </div> -->
+        </div>
+    </section>
+
+    <section>
+
+        <div class="bg-white w-full">
+
+
+
+            <div class="overflow-hidden">
+                <div class="scale-105 w-full">
+                    <img class="w-full" src="./images/hero-shape.svg" alt="">
+                </div>
+            </div>
+            <!-- leftimg -->
+
+
+
+            <!--  content -->
+            <div class="w-[1080px] mx-auto font-mullish relative">
+
+                <div class="flex flex-col items-center gap-4 mt-16">
+                    <h2 class="font-extrabold text-[1.5em]">Accept Payments with Razorpay Payment Suite</h2>
+                    <div class="bg-green-500 h-1 w-6"></div>
+                </div>
+
+
+                <!-- flex content -->
+                <div class="flex border-[1px] px-10 mt-5 rounded">
+                    <!-- l -->
+                    <div class="flex flex-col gap-[1.5em] justify-center">
+
+                        <h2 class="font-[750] text-[1.7em]">
+                            Supercharge your business with the all‑powerful <span class="text-blue-500"> Payment Gateway
+                            </span>
+                        </h2>
+
+                        <ul class="flex flex-col">
+                            <li><i class="fa-solid fa-check text-green-500 size-[2em]"></i>100+ Payment Methods</li>
+                            <li><i class="fa-solid fa-check text-green-500 size-[2em]"></i>Industry Leading Success Rate
+                            </li>
+                            <li><i class="fa-solid fa-check text-green-500 size-[2em]"></i>Superior Checkout Experience
+                            </li>
+                            <li><i class="fa-solid fa-check text-green-500 size-[2em]"></i>Easy to Integrate</li>
+                            <li><i class="fa-solid fa-check text-green-500 size-[2em]"></i>Instant Settlements from day
+                                1</li>
+                            <li><i class="fa-solid fa-check text-green-500 size-[2em]"></i>In-depth Reporting and
+                                Insights</li>
+                        </ul>
+
+                        <div class="flex gap-2">
+                            <button
+                                class="bg-blue-500 text-white px-5 py-4 rounded hover:bg-blue-600 duration-[0.5s] hover:bg-white hover:text-blue-500">
+                                SignUp Now &nbsp;<i class="fa-solid fa-arrow-right"></i></button>
+                            <button
+                                class="text-blue-500 hover:text-white hover:bg-blue-500 px-5 rounded duration-[0.5s]">
+                                Know More
+                            </button>
+                        </div>
+
+                    </div>
+
+                    <!-- r -->
+                    <div class="">
+                        <img src="./images/payment-suite.png" alt="">
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section>
+
+        <!-- wrapper -->
+        <div class="w-[1080px] mx-auto m-10">
+
+
+            <!-- grid container -->
+            <div class="grid grid-cols-3 m-5 gap-4">
+
+                <!-- card 1 -->
+                <div class="w-full h-full relative card">
+
+                    <img class="absolute top-0 right-0 size-14 rounded-full bg-lightBlue500" src="./images/payment-link-icon.svg" alt="">
+
+                    <svg viewBox="0 0 349.32501220703125 225" xmlns="http://www.w3.org/2000/svg"
+                        preserveAspectRatio="none"
+                        class="stroke-1 stroke-[#818597] w-full h-full absolute z-[9] transition-all duration-200 shadow"
+                        style="stroke-opacity: 0.15">
+
+                        <path d="m 0 6 
+                        a 6 6 0 0 1 6 -6 
+                        h 250.32501220703125 
+                        a 16 16 0 0 1 11 5 
+                        l 77 77 
+                        a 16 16 0 0 1 5 11 
+                        v 126 
+                        a 6 6 0 0 1 -6 6 
+                        h -337.32501220703125 
+                        a 6 6 0 0 1 -6 -6 
+                        z" fill="#fff"></path>
+                    </svg> 
+
+
+                    <!-- content -->
+
+                    <div class="flex px-2 py-2">
+                        <div class="z-[11] flex flex-col gap-4 font-mullish">
+                            <h2 class="text-deepBlue font-bold  text-xl">Payment Link</h2>
+                            <p class="text-gray-500 text-[0.9rem] capitalize">Share payment link via an email, sms, messenger, chatbot, etc. and get paid immediately.
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div class="flex px-2 py-2">
+                        <button class="z-[11] text-white border-[1px] hover:border-blue-500 hover:text-blue-500 hover:bg-white bg-blue-500 px-5 py-2 rounded duration-[0.5s]">Know More</button>
+                    </div>
+
+                    <div class="relative ">
+                        <img class="z-[11] absolute size-[5.5em] right-0 bottom-0 thunder" src="./images/x-flame-1.png" alt="">
+                    </div>
+
+                </div>
+
+                <div class="w-full h-full relative card">
+
+                    <img class="absolute top-0 right-0 size-14 rounded-full bg-lightBlue500" src="./images/payment-pages-icon.svg" alt="">
+
+                    <svg viewBox="0 0 349.32501220703125 225" xmlns="http://www.w3.org/2000/svg"
+                        preserveAspectRatio="none"
+                        class="stroke-1 stroke-[#818597] w-full h-full absolute z-[9] transition-all duration-200 shadow"
+                        style="stroke-opacity: 0.15">
+
+                        <path d="m 0 6 
+                        a 6 6 0 0 1 6 -6 
+                        h 250.32501220703125 
+                        a 16 16 0 0 1 11 5 
+                        l 77 77 
+                        a 16 16 0 0 1 5 11 
+                        v 126 
+                        a 6 6 0 0 1 -6 6 
+                        h -337.32501220703125 
+                        a 6 6 0 0 1 -6 -6 
+                        z" fill="#fff"></path>
+                    </svg> 
+
+
+                    <!-- content -->
+
+                    <div class="flex px-2 py-2">
+                        <div class="z-[11] flex flex-col gap-4 font-mullish">
+                            <h2 class="text-deepBlue font-bold  text-xl">Payment Page</h2>
+                            <p class="text-gray-500 text-[0.9rem] capitalize">Take Your Store Online Instantly With Zero Coding. Accept International & Domestic Payments
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div class="flex px-2 py-2">
+                        <button class="z-[11] text-white border-[1px] hover:border-blue-500 hover:text-blue-500 hover:bg-white bg-blue-500 px-5 py-2 rounded duration-[0.5s]">Know More</button>
+                    </div>
+
+                    <div class="relative ">
+                        <img class="z-[11] absolute size-[5.5em] right-0 bottom-0 thunder" src="./images/x-flame-1.png" alt="">
+                    </div>
+
+                </div>
+
+                <div class="w-full h-full relative card">
+
+                    <img class="absolute top-0 right-0 size-14 rounded-full bg-lightBlue500" src="./images/payment-button.svg" alt="">
+
+                    <svg viewBox="0 0 349.32501220703125 225" xmlns="http://www.w3.org/2000/svg"
+                        preserveAspectRatio="none"
+                        class="stroke-1 stroke-[#818597] w-full h-full absolute z-[9] transition-all duration-200 shadow"
+                        style="stroke-opacity: 0.15">
+
+                        <path d="m 0 6 
+                        a 6 6 0 0 1 6 -6 
+                        h 250.32501220703125 
+                        a 16 16 0 0 1 11 5 
+                        l 77 77 
+                        a 16 16 0 0 1 5 11 
+                        v 126 
+                        a 6 6 0 0 1 -6 6 
+                        h -337.32501220703125 
+                        a 6 6 0 0 1 -6 -6 
+                        z" fill="#fff"></path>
+                    </svg> 
+
+
+                    <!-- content -->
+
+                    <div class="flex px-2 py-2">
+                        <div class="z-[11] flex flex-col gap-4 font-mullish">
+                            <h2 class="text-deepBlue font-bold  text-xl">Payment Buttons</h2>
+                            <p class="text-gray-500 text-[0.9rem] capitalize">Create, Copy & collect with payment button. collect one time or subscription payments & more
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div class="flex px-2 py-2">
+                        <button class="z-[11] text-white border-[1px] hover:border-blue-500 hover:text-blue-500 hover:bg-white bg-blue-500 px-5 py-2 rounded duration-[0.5s]">Know More</button>
+                    </div>
+
+                    <div class="relative ">
+                        <img class="z-[11] absolute size-[5.5em] right-0 bottom-0 thunder" src="./images/x-flame-1.png" alt="">
+                    </div>
+
+                </div>
+
+
+                <div class="w-full h-full relative card">
+
+                    <img class="absolute top-0 right-0 size-14 rounded-full bg-lightBlue500" src="./images/subscriptions-icon.svg" alt="">
+
+                    <svg viewBox="0 0 349.32501220703125 225" xmlns="http://www.w3.org/2000/svg"
+                        preserveAspectRatio="none"
+                        class="stroke-1 stroke-[#818597] w-full h-full absolute z-[9] transition-all duration-200 shadow"
+                        style="stroke-opacity: 0.15">
+
+                        <path d="m 0 6 
+                        a 6 6 0 0 1 6 -6 
+                        h 250.32501220703125 
+                        a 16 16 0 0 1 11 5 
+                        l 77 77 
+                        a 16 16 0 0 1 5 11 
+                        v 126 
+                        a 6 6 0 0 1 -6 6 
+                        h -337.32501220703125 
+                        a 6 6 0 0 1 -6 -6 
+                        z" fill="#fff"></path>
+                    </svg> 
+
+
+                    <!-- content -->
+
+                    <div class="flex px-2 py-2">
+                        <div class="z-[11] flex flex-col gap-4 font-mullish">
+                            <h2 class="text-deepBlue font-bold  text-xl">Subscriptions</h2>
+                            <p class="text-gray-500 text-[0.9rem] capitalize">Subscriptions Plan With Automated Recurring Transactions On Various Payment Modes.
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div class="flex px-2 py-2 mt-5">
+                        <button class="z-[11] text-white border-[1px] hover:border-blue-500 hover:text-blue-500 hover:bg-white bg-blue-500 px-5 py-2 rounded duration-[0.5s]">Know More</button>
+                    </div>
+
+                    <div class="relative ">
+                        <img class="z-[11] absolute size-[5.5em] right-0 bottom-0 thunder" src="./images/x-flame-1.png" alt="">
+                    </div>
+
+                </div>
+
+                <div class="w-full h-full relative card">
+
+                    <img class="absolute top-0 right-0 size-14 rounded-full bg-lightBlue500" src="./images/route-icon.svg" alt="">
+
+                    <svg viewBox="0 0 349.32501220703125 225" xmlns="http://www.w3.org/2000/svg"
+                        preserveAspectRatio="none"
+                        class="stroke-1 stroke-[#818597] w-full h-full absolute z-[9] transition-all duration-200 shadow"
+                        style="stroke-opacity: 0.15">
+
+                        <path d="m 0 6 
+                        a 6 6 0 0 1 6 -6 
+                        h 250.32501220703125 
+                        a 16 16 0 0 1 11 5 
+                        l 77 77 
+                        a 16 16 0 0 1 5 11 
+                        v 126 
+                        a 6 6 0 0 1 -6 6 
+                        h -337.32501220703125 
+                        a 6 6 0 0 1 -6 -6 
+                        z" fill="#fff"></path>
+                    </svg> 
+
+
+                    <!-- content -->
+
+                    <div class="flex px-2 py-2">
+                        <div class="z-[11] flex flex-col gap-4 font-mullish">
+                            <h2 class="text-deepBlue font-bold  text-xl">Route</h2>
+                            <p class="text-gray-500 text-[0.9rem] capitalize">Split Incoming Payments Auto-Matically To Vendor's Accounts, Manage Marketplace Money Flow...
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div class="flex px-2 py-2">
+                        <button class="z-[11] text-white border-[1px] hover:border-blue-500 hover:text-blue-500 hover:bg-white bg-blue-500 px-5 py-2 rounded duration-[0.5s]">Know More</button>
+                    </div>
+
+                    <div class="relative ">
+                        <img class="z-[11] absolute size-[5.5em] right-0 bottom-0 thunder" src="./images/x-flame-1.png" alt="">
+                    </div>
+
+                </div>
+
+                <div class="w-full h-full relative card">
+
+                    <img class="absolute top-0 right-0 size-14 rounded-full bg-lightBlue500" src="./images/smart-collect-icon.svg" alt="">
+
+                    <svg viewBox="0 0 349.32501220703125 225" xmlns="http://www.w3.org/2000/svg"
+                        preserveAspectRatio="none"
+                        class="stroke-1 stroke-[#818597] w-full h-full absolute z-[9] transition-all duration-200 shadow"
+                        style="stroke-opacity: 0.15">
+
+                        <path d="m 0 6 
+                        a 6 6 0 0 1 6 -6 
+                        h 250.32501220703125 
+                        a 16 16 0 0 1 11 5 
+                        l 77 77 
+                        a 16 16 0 0 1 5 11 
+                        v 126 
+                        a 6 6 0 0 1 -6 6 
+                        h -337.32501220703125 
+                        a 6 6 0 0 1 -6 -6 
+                        z" fill="#fff"></path>
+                    </svg> 
+
+
+                    <!-- content -->
+
+                    <div class="flex px-2 py-2">
+                        <div class="z-[11] flex flex-col gap-4 font-mullish">
+                            <h2 class="text-deepBlue font-bold  text-xl">Smart Collect</h2>
+                            <p class="text-gray-500 text-[0.9rem] capitalize">Automatically Reconcile Incoming NEFT, RTGS, IMPS, UPI Payments Using Virtual Account & UPI-IDs
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div class="flex px-2 py-2">
+                        <button class="z-[11] text-white border-[1px] hover:border-blue-500 hover:text-blue-500 hover:bg-white bg-blue-500 px-5 py-2 rounded duration-[0.5s]">Know More</button>
+                    </div>
+
+                    <div class="relative ">
+                        <img class="z-[11] absolute size-[5.5em] right-0 bottom-0 thunder" src="./images/x-flame-1.png" alt="">
+                    </div>
+
+                </div>
+
+               
+       
+
+            </div>
+
+
+        </div>
+
+
+
+
+
+
+    </section>
 
 </body>
 
